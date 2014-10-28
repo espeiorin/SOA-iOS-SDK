@@ -5,7 +5,7 @@ SOA-iOS-SDK
 [![Plafform](http://img.shields.io/cocoapods/p/SOA-iOS-SDK.svg?style=flat-square)](http://cocoadocs.org/docsets/SOA-iOS-SDK)
 [![Plafform](http://img.shields.io/cocoapods/v/SOA-iOS-SDK.svg?style=flat-square)](http://cocoadocs.org/docsets/SOA-iOS-SDK)
 
-[SOA Server](https://github.com/coderockr/soa) is a great way to build your Web Services, it's built on top of Silex and Doctrine 2, but using iOS as a client you couldn't get the same experience, until now. After a long time using SOA Server I decided to transport the same mindset to Objective-C and the result is this library.
+[SOA Server](https://github.com/coderockr/soa) is a great way to build your Web Services, it's built on top of Silex and Doctrine 2, but using iOS as a client you couldn't get the same experience, until now. After using SOA Server for a long time I decided to use the same mindset with Objective-C and the result is this library.
 
 ##Getting SOA iOS SDK
 
