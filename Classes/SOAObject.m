@@ -99,7 +99,7 @@
 
 - (void) saveWithCompletionBlock:(SOACompletionBlock)completion
 {
-    NSMutableDictionary *parameters = [self.values copy];
+    NSMutableDictionary *parameters = [self.values mutableCopy];
     if (self.entityId > 0) {
         parameters[@"id"] = @(self.entityId);
     }

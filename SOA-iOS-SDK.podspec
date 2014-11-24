@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SOA-iOS-SDK"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "SOA-iOS-SDK is a client built to consume SOA Server based APIs."
 
   s.description  = <<-DESC
@@ -208,7 +208,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "git@github.com:espeiorin/SOA-iOS-SDK.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/espeiorin/SOA-iOS-SDK.git", :tag => "0.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
