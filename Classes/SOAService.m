@@ -39,7 +39,7 @@ static NSOperationQueue *_serviceQueue;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (completion != NULL) {
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                completion(nil, error);
+                completion(operation.responseObject, error);
             }];
         }
     }];
