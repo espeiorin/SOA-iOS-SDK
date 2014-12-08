@@ -11,7 +11,7 @@ SOA-iOS-SDK
 
 ###Cocoapods
 ```objc
-pod 'SOA-iOS-SDK', '~> 0.1.0'
+pod 'SOA-iOS-SDK', '~> 0.1.3'
 ```
 
 ##Configure it
