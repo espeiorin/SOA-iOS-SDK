@@ -152,3 +152,9 @@ SOARPCCall *rpc = [[SOARPCCall alloc] init];
        NSLog(@"%@", error);
    }];
 ```
+
+##Dealing with authorization errors
+From version 0.1.3, you can observe authorization failures using NSNotificationCenter, the notification name is **SOAServiceAuthErrorNotification**:
+```Objc
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selector:) name:SOAServiceAuthErrorNotification object:nil];
+```

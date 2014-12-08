@@ -11,6 +11,7 @@
 #import "SOAManager.h"
 
 static NSOperationQueue *_serviceQueue;
+NSString *SOAServiceAuthErrorNotification = @"SOA_SERVICE_AUTH_ERROR";
 
 @implementation SOAService
 
@@ -37,6 +38,12 @@ static NSOperationQueue *_serviceQueue;
             }];
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (operation.response.statusCode == 401 ||
+            operation.response.statusCode == 403 ||
+            operation.response.statusCode == 405) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:SOAServiceAuthErrorNotification
+                                                                object:error];
+        }
         if (completion != NULL) {
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 completion(operation.responseObject, error);

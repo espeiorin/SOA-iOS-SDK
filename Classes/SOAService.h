@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "SOATypes.h"
 
+extern NSString *SOAServiceAuthErrorNotification;
+
 @interface SOAService : NSObject
 
 + (NSOperationQueue *) serviceQueue;
